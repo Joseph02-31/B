@@ -99,6 +99,21 @@
             alert('Incorrect password. Please try again.');
         }
     }
+
+    
+   
+            // Function to toggle password visibility
+        function togglePassword() {
+            const passwordField = document.getElementById('password');
+            const toggleIcon = document.getElementById('toggle-icon');
+            if (passwordField.type === "password") {
+                passwordField.type = "text";
+                toggleIcon.innerText = "Hide Password";
+            } else {
+                passwordField.type = "password";
+                toggleIcon.innerText = "Show Password";
+            }
+        }
     </script>
 
 </head>
