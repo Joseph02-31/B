@@ -15,30 +15,30 @@
             background-size: cover;
             background-position: center;
             background-blend-mode: overlay;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
             color: #fff;
+            margin: 0;
+            display: flex;
             flex-direction: column;
-            overflow-y: scroll;
+            align-items: center;
+            min-height: 100vh;
+            overflow-y: auto; /* Enable scrolling */
         }
 
         .video-container {
             position: relative;
             width: 900px;
             max-width: 90%;
+            height: auto;
             border-radius: 12px;
             overflow: hidden;
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
             text-align: center;
+            margin-top: 20px; /* Add some margin at the top */
         }
 
         iframe {
-            aspect-ratio: 16 / 9;
             width: 100%;
-            height: auto;
+            height: 500px; /* Adjust the height of the iframe */
             border: none;
             display: block;
         }
@@ -50,11 +50,11 @@
             margin-top: 10px;
             text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
         }
-        
-         .description-section {
+
+        .description-section {
             font-family: 'TeX Gyre Chorus', cursive;
             color: rgb(0, 0, 0);
-            margin-top: 40px; /* Add space between video and description */
+            margin-top: 20px; /* Add space between video and description */
             text-align: left;
             padding: 10px;
             width: 900px;
@@ -89,12 +89,12 @@
         <div class="video-title">Magic Square</div>
     </div>
 
-        <!-- Description section -->
+    <!-- Description section moved here -->
     <div class="description-section">
         <h2>Description of the video</h2>
-        <p>I made a video about my Ramanujan magic square with my own date of birth, using Python and its library Manim for animated mathematics videos, where the magic constant is 61! In this video, I explore the unique properties of this fascinating square, showing how every row, column, and diagonal ( and others ) adds up to the same number. It's a blend of creativity and mathematical beauty that you won't want to miss. Check it out and let me know what you think!</p>
-        <p>Srinivasa Ramanujan ( 1887 – 1920 ) was an Indian mathematician renowned for his extraordinary contributions to number theory, continued fractions, and infinite series, among other areas. Despite having little formal training, he developed numerous groundbreaking mathematical results, many of which were ahead of their time. His work on partition theory, the theory of modular forms, and the famous Ramanujan-Hardy number (1729) are just a few examples of his legacy. His intuitive, self-taught approach to mathematics has made him one of the most celebrated figures in the field.</p>
-        <p>Music used in this video: ' AURA ' by Ogryzek.</p>
+        <p>I made a video about my Ramanujan magic square with my own date of birth, using Python and its library Manim for animated mathematics videos, where the magic constant is 61! In this video, I explore the unique properties of this fascinating square, showing how every row, column, and diagonal (and others) adds up to the same number. It's a blend of creativity and mathematical beauty that you won't want to miss. Check it out and let me know what you think!</p>
+        <p>Srinivasa Ramanujan (1887 – 1920) was an Indian mathematician renowned for his extraordinary contributions to number theory, continued fractions, and infinite series, among other areas. Despite having little formal training, he developed numerous groundbreaking mathematical results, many of which were ahead of their time. His work on partition theory, the theory of modular forms, and the famous Ramanujan-Hardy number (1729) are just a few examples of his legacy. His intuitive, self-taught approach to mathematics has made him one of the most celebrated figures in the field.</p>
+        <p>Music used in this video: 'AURA' by Ogryzek.</p>
     </div>
 </body>
 </html>
