@@ -90,14 +90,17 @@
         }
     </style>
     <script>
-        function checkPassword() {
-            const password = document.getElementById('password').value;
-            if (password === 'Soukayna') { // Replace 'Youssef' with the actual password
-                window.location.href = 'A.html'; // Replace with your desired link
-            } else {
-                alert('Incorrect password. Please try again.');
-            }
+    function checkPassword() {
+        const password = document.getElementById('password').value;
+        const validPasswords = ['Soukayna', 'Youssra', 'Youssef', 'Abdellah']; // List of valid passwords
+        if (validPasswords.includes(password)) { 
+            window.location.href = 'A.html'; // Redirect based on the entered password
+        } else {
+            alert('Incorrect password. Please try again.');
         }
+    }
+    </script>
+
 
         // Function to toggle password visibility
         function togglePassword() {
