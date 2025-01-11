@@ -46,12 +46,20 @@
     </style>
 </head>
 <body>
-    <div class="video-container">
-        <!-- Video Player -->
-        <video id="videoPlayer" controls>
-            <source src="video.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
+<div class="video-container">
+    <!-- YouTube Video Player -->
+    <iframe 
+        id="videoPlayer" 
+        width="560" 
+        height="315" 
+        src="https://www.youtube.com/embed/AZd4JgSMOm0" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+    </iframe>
+</div>
+
 
         <!-- Title under the video -->
         <div class="video-title">Magic Square</div>
