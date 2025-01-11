@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Password Protected Link</title>
-    <link rel="icon" href="../1.jpg" type="image/x-icon">
+    <link rel="icon" href='../1.jpg' type="image/x-icon">
     <style>
         body {
             font-family: "TeX Gyre Chorus", cursive;
@@ -13,7 +13,7 @@
             align-items: center;
             min-height: 100vh;
             margin: 0;
-            background-image: url("../2.jpg") no-repeat center center fixed;
+            background-image: url('../2.jpg');
             background-size: cover;
             color: rgb(3, 3, 3);
         }
@@ -86,8 +86,8 @@
     <script>
         function checkPassword() {
             const password = document.getElementById('password').value;
-            if (password === 'Youssef') { // Replace 'Youssef' with the actual password
-                window.location.href = 'https://www.google.com/search?q=weather'; // Replace with your desired link
+            if (password === 'Soukayna') { // Replace 'Youssef' with the actual password
+                window.location.href = 'https://www.google.com/'; // Replace with your desired link
             } else {
                 alert('Incorrect password. Please try again.');
             }
