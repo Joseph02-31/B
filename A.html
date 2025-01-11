@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Magic Square</title>
-    <!-- Add a decorative font -->
-    <link href="https://fonts.googleapis.com/css2?family=Zapf+Chancery&display=swap" rel="stylesheet">
-    <link rel="icon" href='1.jpg' type="image/x-icon">
+    <!-- Decorative Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="icon" href="1.jpg" type="image/x-icon">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -14,6 +14,7 @@
             background-image: url('3.jpg');
             background-size: cover;
             background-position: center;
+            background-blend-mode: overlay;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -33,14 +34,15 @@
         }
 
         iframe {
+            aspect-ratio: 16 / 9;
             width: 100%;
-            height: 500px;
+            height: auto;
             border: none;
             display: block;
         }
 
         .video-title {
-            font-family: 'Zapf Chancery', cursive;
+            font-family: 'Great Vibes', cursive;
             font-size: 30px;
             color: #fff;
             margin-top: 10px;
@@ -54,7 +56,7 @@
         <iframe 
             id="videoPlayer" 
             src="https://www.youtube.com/embed/AZd4JgSMOm0" 
-            title="YouTube video player" 
+            title="Magic Square Video Player" 
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
             allowfullscreen>
         </iframe>
