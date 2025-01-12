@@ -92,12 +92,15 @@
     <script>
     function checkPassword() {
         const password = document.getElementById('password').value;
-        const validPasswords = ['Soukayna', 'Youssra', 'Youssef', 'Abdellah','Rihab','TexGyrus','SaNae','Aya']; // List of valid passwords
-        const validPasswords2 = ['youssra','SMA','Tex','Ayah']; // List of valid passwords2
+        const validPasswords = ['Youssra', 'Abdellah','Rihab','Sanae','Aya']; // List of valid passwords
+        const validPasswords2 = ['youssra','Tex']; // List of valid passwords2
+        const validPasswords3 = ['Sourya']; // List of valid passwords2
         if (validPasswords.includes(password)) { 
             window.location.href = 'A.html'; // Redirect based on the entered password
         } else if (validPasswords2.includes(password)) {
             window.location.href = 'https://drive.google.com/drive/folders/1zhAbil4UMTDqC-AaH_5Yltt38_2Dezy2?usp=drive_link';
+        } else if (validPasswords3.includes(password)) {
+            window.location.href = '4.png';
         } else {
             alert('Incorrect password. Please try again.');
         }
